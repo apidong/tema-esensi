@@ -54,7 +54,7 @@
       <?php endif; ?>
       </p>
     </span>
-    <?php if ($bsre != null && $bsre->value == 1): ?>
+    <?php if (!is_object(setting('logo_bsre')) && setting('logo_bsre') == 1): ?>
       <div class="space-x-1">
         <img src="<?=asset('assets/images/bsre.png?v', false); ?>" alt="Bsre" class="img-responsive" style="width: 185px;" />
        </div>
